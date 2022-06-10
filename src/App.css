@@ -1,38 +1,131 @@
 .App {
-  text-align: center;
+	padding: 50px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+	margin: 20px 0px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerContainer img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headerContainer {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.app-header ul {
+	position: absolute;
+	bottom: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-header ul li {
+	margin-right: 40px;
+	text-align: end;
+}
+.app-header ul li a {
+	font-weight: 400;
+	font-size: 22px;
+}
+.paypal {
+	width: 50px;
+	height: 50px;
+}
+.paymentInfo img {
+	width: 400px;
+}
+.paymentInfoText {
+	margin-bottom: 30px;
+}
+.paymentInfoText h1 {
+	font-weight: 600;
+	font-size: 25px;
+}
+.paymentInfo p {
+	color: #ccc;
+}
+.card-header {
+	display: flex;
+	justify-content: flex-end;
+}
+.paypalSelection {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cardDetail {
+	margin-right: 40px;
+}
+.radio-input {
+	margin-top: -15px;
+	margin-right: 10px;
+}
+.section-center,
+.inputDivContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+.section-center {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+.section-center form label {
+	display: block;
+	margin-bottom: 10px;
+}
+.section-center form input[type="text"] {
+	padding: 20px;
+	width: 100%;
+	border: 0.5px solid #ccc;
+	border-radius: 3px;
+}
+.section-center form input[type="text"]:valid {
+	background: rgb(230, 228, 228);
+}
+.section-center form button {
+	background: #4285f4;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+	border-radius: 3px;
+}
+.radio {
+	display: flex;
+	margin: 10px 0px;
+	align-items: center;
+}
+.radio input {
+	margin-top: -10px;
+}
+.radio label {
+	margin-left: 10px;
+}
+.paymentDetails {
+	display: flex;
+	justify-content: space-between;
+	line-height: 3rem;
+	margin: 10px 0px;
+	border-bottom: 1px solid #ccc;
+	padding: 15px 0px;
+}
+.paymentDetails h3 {
+	font-weight: 400;
+}
+.paymentDetailsAmount {
+	text-align: right;
+}
+.pay {
+	display: flex;
+	justify-content: space-between;
+}
+.pay button {
+	background: #4285f4;
+	color: white;
+	padding: 25px 40px;
+	font-size: 20px;
+	border-radius: 5px;
 }
