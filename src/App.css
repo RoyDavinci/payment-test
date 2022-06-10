@@ -32,6 +32,7 @@ header {
 }
 .paymentInfo img {
 	width: 400px;
+	border-radius: 5px;
 }
 .paymentInfoText {
 	margin-bottom: 30px;
